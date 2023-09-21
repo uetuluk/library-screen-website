@@ -120,11 +120,8 @@ function loadNextUrl() {
         currentUrlIndex = 0; // Reset to start
     }
 
-    console.log("test2");
-
     if (storedUrls.length === 0) {
         iframe.src = "about:blank"; // Load a blank page
-        console.log("test");
         return; 
     }
 
@@ -180,8 +177,6 @@ function removeUrlFromRotation(removedUrl) {
     const storedUrls = JSON.parse(localStorage.getItem('urls')) || [];
     const updatedUrls = storedUrls.filter(url => url !== removedUrl);
     localStorage.setItem('urls', JSON.stringify(updatedUrls));
-
-    console.log("remove", iframe.src, removedUrl);
 
     // Check if the removed URL is the currently displayed one
     if (iframe.src === removedUrl) {
