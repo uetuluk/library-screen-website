@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NYU Shanghai Libraries</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="content">
+    <div class="header">
+        NYU Shanghai Libraries
+        <button id="settingsBtn" class="settings-btn">⚙</button>
+    </div>
+    <iframe id="contentIframe" src="" frameborder="0"></iframe>
+
+    <div class="settings-panel">
+        <button id="closeSettingsBtn" class="close-settings-btn">Close</button>
+
+        <h2>Settings</h2>
+        <label for="urlInput">Add URL:</label>
+        <input type="url" id="urlInput" placeholder="Enter website URL">
+        <button id="addUrlButton">Add</button>
+
+        <h3>Content URLs:</h3>
+        <ul id="urlList"></ul>
+
+        <h3>Swap Time:</h3>
+        <label for="swapTimeSlider">Minutes:</label>
+        <input type="range" id="swapTimeSlider" min="1" max="60" value="1">
+        <input type="number" id="swapTimeInput" min="1" max="60" value="1"> minutes
+
+
+    </div>
+
+    <button id="fullscreenBtn" class="fullscreenBtn">Go Fullscreen</button>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
