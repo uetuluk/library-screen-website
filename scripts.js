@@ -192,7 +192,8 @@ function removeUrlFromRotation(removedUrl) {
 
 function displayUrl(url) {
     const listItem = document.createElement('li');
-    listItem.textContent = url;
+    const listItemContainer = listItem.appendChild(document.createElement('div'));
+    listItemContainer.textContent = url;
 
     const removeBtn = document.createElement('button');
     removeBtn.textContent = 'Remove';

@@ -32,6 +32,7 @@ iframe {
     height: 90vh;
     border: none;
     background-color: white;
+    overflow: hidden;
 }
 
 .settings-panel {
@@ -89,6 +90,11 @@ iframe {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 8px;
+    flex-direction: column;
+}
+
+#urlList li div {
+    width: 100%;
 }
 
 #urlList button, #addUrlButton, #closeSettingsBtn {
